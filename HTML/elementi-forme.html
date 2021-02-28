@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+        <meta name="description" content="Free web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="../CSS/Naslovna.css" rel="stylesheet" type="text/css"/>
+        <link href="../CSS/form.css" rel="stylesheet" type="text/css"/>
+        
+        <title>
+           CUBES ŠKOLA - Grupa QA6
+        </title>
+        
+        <link href="../FOTO/logo.png"  rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="https://cubes.edu.rs/" target="_blank"> <img src="../FOTO/cubes-logo.png" width="200" height="100" title="cubes.edu.rs"> </a>
+    </header>
+    
+    <!-- Navigation Bar --> 
+    <nav>
+        <div class="container">
+            <a href="index.html">
+            Naslovna
+            </a>
+            <a href="Studenti.html">
+            Studenti
+            </a>
+            <a href="Lekcije.html">
+            Lekcije
+            </a>
+            <a href="Quiz.php">
+            Kviz
+            </a>
+        </div>
+    </nav>
+
+          <div class="container">
+            <aside class="list">
+                <h1>Lekcije</h1>
+                <a href="uvod-u-web.html">Uvod u Web</a>
+                <a href="html-dugacka.html">HTML - dugačka stranica</a>
+                <a href="elementi-forme.html">Elementi forme</a>
+                <a href="JS-vezbe.html">JavaScript vežbe</a>
+                <a href="Login.html">Login</a>
+                <a href="Registracija.html">Registracija</a>
+             <br> <br> 
+            <h2 style="text-align: center">Logo grupe</h2>
+            <img src="../FOTO/QA-logo.png" width="200" height="200" style="display: block; margin-left: auto; margin-right: auto;">    
+            </aside>
+              
+            <section>
+                <h1>Primeri elemenata forme</h1><br>
+                <div class="group">
+                    <h2>Text input</h2>
+                    <form>
+                        Ime:<br>
+                        <input type="text" name="firstname"><br>
+                        Prezime:<br>
+                        <input type="text" name="lastname">
+                    </form>
+                </div>
+
+                <div class="group">
+                    <h2>Radio Button Input</h2>
+                    <form>
+                        <label>Pol:</label><br>
+                        <input type="radio" name="gender" value="male"> Muško<br>
+                        <input type="radio" name="gender" value="female" checked=""> Žensko<br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+                <div class="group">
+                    <h2>The Submit Button</h2>
+                    <form action="form_elements.html" method="get">
+                        Ime:<br>
+                        <input type="text" name="firstname"><br>
+                        Prezime:<br>
+                        <input type="text" name="lastname"><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                            
+                <div class="group">
+                    <h2>Grouping Form Data with &lt;fieldset&gt;</h2>
+                    <form action="/action_page.php">
+                        <fieldset>
+                            <legend>Podaci o osobi:</legend>
+                            Ime:<br>
+                            <input type="text" name="firstname" value="Oliver"><br>
+                            Prezime:<br>
+                            <input type="text" name="lastname" value="Vukovic"><br><br>
+                            <input type="submit" value="Submit">
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="group">
+                    <h2>HTML Form Elements</h2>
+                    <form action="/action_page.php">
+                        <fieldset>
+                            <legend>The &lt;input&gt; element</legend>
+                            <input type="text" name="firstname">
+                        </fieldset>
+                        <fieldset>
+                            <legend>The &lt;&lt;select&gt; element</legend>
+                            <select name="cars">
+                                <option value="volvo">Yugo</option>
+                                <option value="saab">KIA</option>
+                                <option value="fiat">Suzuki</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+                            <legend>The &lt;select&gt; element with multiple selections</legend>
+                            <select name="cars" multiple="">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="fiat">Fiat</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+                            <legend>The &lt;textarea&gt; element</legend>
+                            <textarea name="message" rows="10" cols="50">  Interesuje me vaša ponuda za kupovinu Fiat automobila.
+                            </textarea>
+                        </fieldset>
+                        <fieldset>
+                            <legend>The &lt;button&gt; element</legend>
+                            <button type="button" onclick="alert('Nolite Jacere Margaritas Ante Porcos!')">Klikni za misao dana</button>
+                        </fieldset>
+                        <fieldset>
+                            <legend>HTML5 &lt;datalist&gt; element</legend>
+                            Koji pretraživač koristiš?
+                            <input list="browsers">
+                            <datalist id="browsers">
+                                <option value="Internet Explorer"></option>
+                                <option value="Firefox"></option>
+                                <option value="Chrome"></option>
+                                <option value="Opera"></option>
+                                <option value="Safari"></option>
+                            </datalist>
+
+                        </fieldset>
+                    </form>
+
+                </div> <br>
+                <div class="mnozenje">
+                    <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">
+                        <label>Promeni vrednosti za rezultat</label><br>
+                        <input type="number" id="a" name="a" value=""> *
+                        <input type="number" id="b" name="b" value="117">
+                        <output name="x" for="a b"></output>
+                    </form>
+                </div> <br>
+                <div class="group">
+                    <form action="/action_page.php">
+                        <fieldset>
+                            <legend>HTML Input Types</legend>
+                            Dugme: <input type="button" onclick="alert('Audaces Fortuna Juvat!')" value="Ovo je dugme"><br><br>
+                            
+                            Checkbox: <br>
+                            <input type="checkbox" name="vehicle1" value="car"> Imam auto<br>
+                            <input type="checkbox" name="vehicle2" value="bike"> Imam biciklu<br><br>
+                            
+                            Omijena boja: 
+                            <input type="color" name="favcolor"><br><br>
+                            
+                            Rođendan: 
+                            <input type="date" name="bday"><br><br>
+                            
+                            Datum prijave na kurs: 
+                            <input type="datetime-local"><br><br>
+                            
+                            Mejl:
+                            <input type="email" name="email"><br><br>
+                            
+                            Izaberi profilnu sliku:
+                            <input type="file"><br><br>
+                            
+                            Skriveno polje:
+                            <input type="hidden"><br><br>
+                            
+                            U kom mesecu je sledeća registracija?
+                            <input type="month"><br><br>
+                            
+                            Koliko imaš godina?
+                            <input type="number" name="age"><br><br>
+                            
+                            Password: <input type="password"><br><br>
+                            
+                            Radio:<br>
+                            <input type="radio" name="gender" value="male" checked=""> Male<br>
+                            <input type="radio" name="gender" value="female"> Female<br>
+                            <input type="radio" name="gender" value="other"> Other<br><br>
+                            
+                            Procenat urađenog domaćeg:
+                            0<input type="range" name="points" min="1" max="100">100<br><br>
+                            
+                            Resetovanje forme:
+                            <input type="reset"><br><br>
+                            
+                            Pretraga:
+                            <input type="search" name="googlesearch"><br><br>
+                            
+                            Dugme za prosleđivanje podataka:
+                            <input type="submit" value="Submit"><br><br>
+                            
+                            Telefon:
+                            <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+                            
+                            Imate li pitanje za nas?
+                            <input type="text"><br><br>
+                            
+                            Kada počinje utakmica?
+                            <input type="time" name="usr_time"><br><br>
+                            
+                            Web stranica:
+                            <input type="url" name="client"><br><br>
+                            
+                            U kojoj nedelji je praznik?
+                            <input type="week"><br><br>
+                        </fieldset>
+                    </form>
+                </div>
+                     
+            </section>
+        </div>
+
+        <!-- Footer -->
+    <footer>
+        <h2>QA kurs 2020 - Grupa QA6 </h2>
+        <p>Cubes škola je mesto Vaših prvih koraka u IT karijeri. </p>
+        
+        <a href="https://www.facebook.com/CubesSchool/" target="_blank"> <img src="../FOTO/fb-foto.png" alt="Facebook" width="30" height="30"> </a>
+        <a href="https://www.instagram.com/cubesschool/" target="_blank"> <img src="../FOTO/instagram-foto.jpg" alt="Instagram" width="30" height="30"> </a>
+        <a href="https://www.linkedin.com/company/cubes-doo/" target="_blank"> <img src="../FOTO/linkedin-foto.jpg" alt="Linkedin" width="30" height="30"> </a>
+  
+        
+        <hr>
+    <div>
+        Copyright © Sva prava su zadržana.
+    </div>
+        
+    </footer>
+
+  </body>
+</html>
+

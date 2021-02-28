@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+        <meta name="description" content="Free web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="../CSS/Naslovna.css" rel="stylesheet" type="text/css"/>
+        <link href="../CSS/form.css" rel="stylesheet" type="text/css"/>
+        
+        <title>
+           CUBES ŠKOLA - Grupa QA6
+        </title>
+        
+        <link href="../FOTO/logo.png"  rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="https://cubes.edu.rs/" target="_blank"> <img src="../FOTO/cubes-logo.png" width="200" height="100" title="cubes.edu.rs"> </a>
+    </header>
+    
+    <!-- Navigation Bar --> 
+    <nav>
+        <div class="container">
+            <a href="../HTML/index.html">
+            Naslovna
+            </a>
+            <a href="../HTML/Studenti.html">
+            Studenti
+            </a>
+            <a href="../HTML/Lekcije.html">
+            Lekcije
+            </a>
+            <a href="../HTML/Quiz.php">
+            Kviz
+            </a>
+        </div>
+    </nav>
+
+          <div class="container">
+            <aside class="list">
+                <h1>Lekcije</h1>
+                <a href="../HTML/uvod-u-web.html">Uvod u Web</a>
+                <a href="../HTML/html-dugacka.html">HTML - dugačka stranica</a>
+                <a href="../HTML/elementi-forme.html">Elementi forme</a>
+                <a href="../HTML/JS-vezbe.html">JavaScript vežbe</a>
+                <a href="../HTML/Login.html">Login</a>
+                <a href="../HTML/Registracija.html">Registracija</a>
+             <br> <br> 
+            <h2 style="text-align: center">Logo grupe</h2>
+            <img src="../FOTO/QA-logo.png" width="200" height="200" style="display: block; margin-left: auto; margin-right: auto;">    
+            </aside>
+              
+            <section>
+                <h1>JS Vežba 09</h1>
+                <br>
+                
+                <button onclick="displayMessage();">Prikaži poruku</button>
+
+                <button onclick="displayWarrning();">Prikaži Upozorenje</button>
+
+                <button onclick="displayDanger();">Prikaži Opasnost</button>
+
+                <br>
+                <hr>
+                <br>
+               
+                <div>
+                    <input type="text" id="message" placeholder="Enter message text">
+                    <button onclick="getValue('message')">Pokupi vrednost</button>
+                    <button type="button" onclick="clearMessageBox()">Clear</button>
+                </div>
+                <br>
+
+                <button onclick="addUp(19, 22);">Prikaži zbir brojeva 19 + 22</button>
+
+
+                <div id="messages">
+
+                </div>
+
+                <script type="text/javascript">
+
+                    let welcome = 'Dobro došli!';
+                    let warning = 'Upozorenje!';
+                    let danger = 'Opasnost!';
+
+                    function displayMessage() {
+                        alert(welcome);
+                    }
+
+                    function displayWarrning() {
+                        alert(warning);
+                    }
+
+                    function displayDanger() {
+                        alert(danger);
+                    }
+
+                    function addUp(a, b) {
+                        alert(a + b);
+                    }
+
+                    function getValue(id) {
+                        alert(document.getElementById(id).value);
+                    }
+
+                    function clearMessageBox() {
+                        document.getElementById("message").value = "";
+                    }
+
+                </script>
+            <br> <br> 
+                <hr> 
+                <br> <br> 
+              <a href="../HTML/JS-vezbe.html" id="js-vezbe">
+                POVRATAK NA STRANU JS VEŽBE</a>
+             
+            </section>
+        </div>
+
+        <!-- Footer -->
+    <footer>
+        <h2>QA kurs 2020 - Grupa QA6 </h2>
+        <p>Cubes škola je mesto Vaših prvih koraka u IT karijeri. </p>
+        
+        <a href="https://www.facebook.com/CubesSchool/" target="_blank"> <img src="../FOTO/fb-foto.png" alt="Facebook" width="30" height="30"> </a>
+        <a href="https://www.instagram.com/cubesschool/" target="_blank"> <img src="../FOTO/instagram-foto.jpg" alt="Instagram" width="30" height="30"> </a>
+        <a href="https://www.linkedin.com/company/cubes-doo/" target="_blank"> <img src="../FOTO/linkedin-foto.jpg" alt="Linkedin" width="30" height="30"> </a>
+  
+        
+        <hr>
+    <div>
+        Copyright © Sva prava su zadržana.
+    </div>
+        
+    </footer>
+
+  </body>
+</html>

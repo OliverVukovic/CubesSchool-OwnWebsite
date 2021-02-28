@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+        <meta name="description" content="Free web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="../CSS/Naslovna.css" rel="stylesheet" type="text/css"/>
+        <link href="../CSS/form.css" rel="stylesheet" type="text/css"/>
+        
+        <title>
+           CUBES ŠKOLA - Grupa QA6
+        </title>
+        
+        <link href="../FOTO/logo.png"  rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="https://cubes.edu.rs/" target="_blank"> <img src="../FOTO/cubes-logo.png" width="200" height="100" title="cubes.edu.rs"> </a>
+    </header>
+    
+    <!-- Navigation Bar --> 
+    <nav>
+        <div class="container">
+            <a href="../HTML/index.html">
+            Naslovna
+            </a>
+            <a href="../HTML/Studenti.html">
+            Studenti
+            </a>
+            <a href="../HTML/Lekcije.html">
+            Lekcije
+            </a>
+            <a href="../HTML/Quiz.php">
+            </a>
+        </div>
+    </nav>
+
+          <div class="container">
+            <aside class="list">
+                <h1>Lekcije</h1>
+                <a href="../HTML/uvod-u-web.html">Uvod u Web</a>
+                <a href="../HTML/html-dugacka.html">HTML - dugačka stranica</a>
+                <a href="../HTML/elementi-forme.html">Elementi forme</a>
+                <a href="../HTML/JS-vezbe.html">JavaScript vežbe</a>
+                <a href="../HTML/Login.html">Login</a>
+                <a href="../HTML/Registracija.html">Registracija</a>
+             <br> <br> 
+            <h2 style="text-align: center">Logo grupe</h2>
+            <img src="../FOTO/QA-logo.png" width="200" height="200" style="display: block; margin-left: auto; margin-right: auto;">    
+            </aside>
+              
+            <section>
+                <h1>JS Vežba 06</h1>
+                <br>
+                <p>
+                    BIOGRAFIJA: <br>
+                    <span id="biography">Osoba Nikola Tesla je punoletna. <br>Nikola Tesla je zaposlen(a). <br>Nikola Tesla je nadprosečno visok(a). <br></span>
+                </p>
+                <br> <hr> <br> 
+                <form>
+                    <fieldset>
+                            <legend>Podaci o osobi:</legend>
+                            Ime:<br>
+                            <input type="text" name="firstname" value="Oliver"><br>
+                            Prezime:<br>
+                            <input type="text" name="lastname" value="Vukovic"><br><br>
+                            Datum rođenja:<br>
+                            <input type="date" name="bday"><br><br>
+                            Visina u cm:<br> 
+                            <input type="number" name="height"><br><br>
+                            Pol:<br>
+                            <input type="radio" name="gender" value="male" checked=""> Male<br>
+                            <input type="radio" name="gender" value="female"> Female<br><br>
+                            
+                            <input type="submit" value="Submit">
+                    </fieldset>    
+                </form>
+                
+                <script type="text/javascript">
+
+                    //Definisanim varijablama dodeliti vrednosti.
+                    //Ispitati godine i u odnosu na njih ispisati "ime osobe" + "prezime" + "poruka(je punoletan/je maloletan)".
+                    //Ispitati zaposlenje i u odnosu na to na prethodnu poruku dodati da je "ime" + "zaposlen u Cubes / nije zaposlen"
+                    //Ispitati visinu. U zavisnosti od visine na prethodnu poruku dodati da je  
+                    //"ime " + visok(>1.9), prosečne visine (>1.7 <=1.9) ili nizak (<=1.7)
+
+                    // Krajnju biografiju ispisati u elementu koji ima id biography
+
+                    let name = 'Nikola';  //string
+                    let surname = "Tesla"; //string
+                    let age = 42; //number
+                    let height = 195; // number
+                    let employed = true;  //boolean
+                    let biography = '';   // empty string
+
+                    /************************************
+                     VAŠ KOD IDE ISPOD
+                     *************************************/
+
+                    if (age >= 18) {
+                        biography = biography + 'Osoba ' + name + " " + surname + " je punoletna. \n";
+                    } else {
+                        biography = biography + 'Osoba ' + name + " " + surname + " je maloletna. \n";
+                    }
+
+                    console.log("Biografija 1: \n" + biography);
+
+
+                    let full_name = name + ' ' + surname;
+
+                    if (employed === true) {
+                        biography += full_name + " je zaposlen(a). \n";
+                    } else {
+                        biography += full_name + " nije zaposlen(a). \n";
+                    }
+
+                    console.log("Biografija 2: \n" + biography);
+
+
+                    if (height > 190) {
+                        biography += name + " je nadprosečno visok(a). \n";
+                    } else if (height > 170 && height <= 190) {
+                        biography += name + " je prosečno visok. \n";
+                    } else {
+                        biography += name + " je nizak. \n";
+                    }
+
+                    console.log("Biografija 3: \n" + biography);
+
+                    document.getElementById('biography').innerText = biography;
+
+
+"--------- 02 ----------"
+
+
+function showMessage () {
+    let name = 'Oliver';
+    let surname = 'Vukovic';
+    let gender = 'male';
+    let height = 180;
+    let statistika = '';
+    let statistics = '';
+    
+    if (gender === 'male') {
+        if (height > 190) {
+            statistika = 'je osoba muskog pola i on je nadprosecno visoka osoba';
+        }
+        else if (height >= 170) {
+            statistika = 'je osoba muskog pola i prosecne je visine';
+        }
+        else {
+            statistika = 'je osoba muskog pola i on je niskog rasta.';
+        }
+    }
+    
+    else {
+        if (height > 180) {
+            statistika = 'je osoba zenskog pola i ona je nadprosecno visoka osoba';
+        }
+        else if (height >= 155) {
+            statistika = 'je osoba zenskog pola i prosecne je visine';
+        }
+        else {
+            statistika = 'je osoba zenskog pola i ona je niskog rasta.';
+        }
+    }
+}
+
+
+
+
+
+
+
+
+                   function showMessage() {
+                       let name2 = document.getElementById('name2').value;
+                       let surname2 = document.getElementById('surname2').value;
+                       let age2 = document.getElementById('age2').value;
+                       let height2 = document.getElementById('height2').value;
+                       let text2 = '';
+                       let text3 = '';
+                       
+                       if(age2 < 18) {
+                           text2 = name2 + ' ' + surname2 + ' je maloletan.';
+                       }
+                       else {
+                           text2 = name2 + ' ' + surname2 + ' je punoletan.';
+                       }
+                       
+                       if(height2 > 190) {
+                           text3 = name2 + ' je visok.';
+                       }
+                       else if(height2 > 170 && height <= 190) {
+                           text3 = name2 + ' je prosečne visine.';
+                       }
+                       else {
+                           text3 = name2 + ' je nizak.';
+                   }
+
+                </script>
+            <br> <br> 
+                <hr> 
+                <br> <br> 
+             <a href="../HTML/JS-vezbe.html" id="js-vezbe">
+                POVRATAK NA STRANU JS VEŽBE</a>
+             
+            </section>
+        </div>
+
+        <!-- Footer -->
+    <footer>
+        <h2>QA kurs 2020 - Grupa QA6 </h2>
+        <p>Cubes škola je mesto Vaših prvih koraka u IT karijeri. </p>
+        
+        <a href="https://www.facebook.com/CubesSchool/" target="_blank"> <img src="../FOTO/fb-foto.png" alt="Facebook" width="30" height="30"> </a>
+        <a href="https://www.instagram.com/cubesschool/" target="_blank"> <img src="../FOTO/instagram-foto.jpg" alt="Instagram" width="30" height="30"> </a>
+        <a href="https://www.linkedin.com/company/cubes-doo/" target="_blank"> <img src="../FOTO/linkedin-foto.jpg" alt="Linkedin" width="30" height="30"> </a>
+  
+        
+        <hr>
+    <div>
+        Copyright © Sva prava su zadržana.
+    </div>
+        
+    </footer>
+
+  </body>
+</html>

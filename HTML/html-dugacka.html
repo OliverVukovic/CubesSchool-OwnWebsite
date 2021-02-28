@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+        <meta name="description" content="Free web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="../CSS/Naslovna.css" rel="stylesheet" type="text/css"/>
+        <link href="../CSS/studenti.css" rel="stylesheet" type="text/css"/>
+        
+        <title>
+           CUBES ŠKOLA - Grupa QA6
+        </title>
+        
+        <link href="../FOTO/logo.png"  rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="https://cubes.edu.rs/" target="_blank"> <img src="../FOTO/cubes-logo.png" width="200" height="100" title="cubes.edu.rs" id="mainTitle"> </a>
+    </header>
+    
+    <!-- Navigation Bar --> 
+    <nav>
+        <div class="container">
+            <a href="index.html">
+            Naslovna
+            </a>
+            <a href="Studenti.html">
+            Studenti
+            </a>
+            <a href="Lekcije.html">
+            Lekcije
+            </a>
+            <a href="Quiz.php">
+            Kviz
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <aside class="list" style="background-color: white;">
+                <h1>Lekcije</h1>
+                <a href="uvod-u-web.html">Uvod u Web</a>
+                <a href="html-dugacka.html">HTML - dugačka stranica</a>
+                <a href="elementi-forme.html">Elementi forme</a>
+                <a href="JS-vezbe.html">JavaScript vežbe</a>
+                <a href="Login.html">Login</a>
+                <a href="Registracija.html">Registracija</a>
+             <br> <br> 
+            <h2 style="text-align: center">Logo grupe</h2>
+            <img src="../FOTO/QA-logo.png" width="200" height="200" style="display: block; margin-left: auto; margin-right: auto;">    
+            </aside>
+              
+            <section> 
+            <div>
+            <h1> 
+                VEŽBA 01 - HTML 
+            </h1> <br> 
+           
+            <h2>
+                Formatiranje teksta 
+            </h2>
+           
+             <p>
+                Kroz sledeće primere izvršićemo osnovno formatiranje teksta na web stranici. 
+             </p> <br>
+           
+            <h3>
+                Dodavanje Naslova (h1-h6) 
+            </h3>
+            
+             <p>
+                 <strong>Headings</strong> pomažu u definisanju strukture stranice i 
+                kontrolišu hijerarhiju sadržaja na stranici.<br> 
+                Na raspolaganju su vam 6 nivoa gde <strong>h1</strong> predstavlja najvažniji naslov na stranici, 
+                pa sve do <strong>h6</strong> koji je najniži po vrednosti.<br> 
+                Postoji nekoliko teorija kako da koristite h1-h6 tagove. <br>
+                Ono što je najbitnije jeste da h1-h6 tagovi daju jačinu i važnost vašem sadržaju, 
+                a ne samo da se odnose na veličinu slova. <br>
+                Sadržaj koji vidite ispisan velikim slovima nije nužno H tag. 
+                Veoma je važno biti konzistentan u korišćenju h1-h6 tagova kroz sajt te je stoga 
+                neophodno dobro se upoznati sa sajtom i njegovim sadržajem pa tek krenuti u 
+                njegovu realizaciju.
+             </p> 
+           
+            <h3>
+                Upotreba paragrafa
+            </h3>
+           
+             <p>
+                 <strong>Paragraf (⟨p⟩)</strong> je jedan od najosnovnijih tagova za formatiranje teksta. <br>
+                Sastoji se od otvarajućeg i zatvarajućeg taga, i to je tag koji ćete najčešće koristiti.<br>
+                Predstavlja veću količinu teksta. Svaka zasebna celina se piše u novom paragrafu. 
+             </p>
+           
+           
+            <h3>
+                Line breaks (Prekid teksta)  
+            </h3>
+           
+             <p>
+                Ponekad ćete imati potrebu da pređete u novi red a da ostanete u okviru paragrafa, 
+                tj. da ne kreirate novi paragraf. Da biste to uradili u HTML-u koristi se <strong>
+                Line break tag (⟨br⟩)</strong>. <br> 
+                Line break je inline tag, što znači da možete da ga koristite u okviru h1-h6 
+                tagova ili paragrafa. On je samozatvarajući tag.<br> 
+                Na primer ukoliko imamo adresu ispisanu u jednom paragrafu (za sada) LINE BREAK možemo 
+                koristiti da odvojimo celine u okviru adrese kao nove redove. <br>
+                cubes.rs,<br> Bulevar Mihajla Pupina 161,<br> Novi Beograd,<br> Srbija. 
+             </p> <br>
+           
+            <h2>
+                Isticanje teksta  
+            </h2>
+             
+             <p>
+                 Često imamo potrebu da određeni deo teksta (jedna reč, nekoliko reči) ili cele fraze 
+                 istaknemo na neki način u odnosu na ostali deo teksta a da ne izlazimo iz paragrafa.<br> 
+                 HTML daje nekoliko načina da to uradite. 
+             </p> <br>
+           
+            <h3>
+                 Bold Tag
+            </h3> 
+           
+             <p>
+             <strong>Bold tag (⟨b⟩)</strong> koristimo kada želimo da istaknemo određeni deo teksta (jedna reč, nekoliko 
+             reči) ili cele fraze, ali <b>SAMO U VIZUELNOM SMISLU.</b> <br>
+             Nakon razmatranja biva uklonjen, ali sa HTML5 ponovo vraćen u upotrebu. <br>
+             U vizuelnom prikazu u browser-u predstavljen je <b>BOLD-OVANJEM</b> teksta.  
+             </p>
+           
+           <h3>
+               Strong Tag 
+           </h3> 
+           
+             Koristeći <strong>strong tag (⟨strong⟩)</strong> deo teksta koji se nalazi između ovog taga predstavlja 
+             tekst koji ima veći značaj od ostatka teksta. 
+             U vizuelnom prikazu predstavljen je kao bold-ovan tekst. Stim što se kod ovog taga pored 
+             vizuelnog boldovanja tekstu daje na značaju. 
+           
+           <h3>
+                Italic Tag 
+           </h3> 
+           
+             Kao bold tag, <strong>italic tag (⟨i⟩)</strong> koristimo kada želimo da istaknemo određeni deo teksta 
+             (jedna reč, nekoliko reči) ili cele fraze, ali <b>SAMO U VIZUELNOM SMISLU</b>. <br> 
+             Nema nikakvo posebno značenje već samo u vizuelnom prikazu u browser-u je predstavljen iskošenim tekstom.
+           
+           <h3>
+               Emphasis Tag  
+           </h3>  
+           
+             <strong>Emphasis tag (⟨em⟩)</strong>, "em" tag, takođe koristimo kada želimo da istaknemo određeni deo 
+             teksta (jedna reč, nekoliko reči) ili cele fraze, ali za razliku od <b>ITALIC TAGA</b> koji 
+             daje samo na vizuelnom izgledu <b>EMPHAZIS TAG DAJE TEKSTU NA ZNAČAJU, VAŽNOSTI</b> u odnosu 
+             na ostali tekst. U prikazu u browser-u je predstavljen iskošenim tekstom. 
+           
+           <h3>
+                Underline Tag  
+           </h3> 
+           
+             <strong>Underline Tag (⟨em⟩)</strong>, je tag koji isključivo ima <b>VIZUELNO</b> značenje, a manifestuje se tako 
+             što se tekst koji se nađe između ovog taga prikazuje kao <b>PODVUČEN TEKST </b>.
+           
+           <h3>
+                 Wait.... what i Ugnježdeni Tagovi 
+           </h3> 
+           
+             Često se postavlja pitanje zašto imamo ovoliko tagova za boldovanje i iskošavanje teksta. <br>
+             Ovo je možda jedna od najvećih konfuzija u upotrebi HTML-a. Najlakši način da se ovo 
+             objasni je sledeći: <br> 
+             Jedna grupa tagova <b>(BOLD i ITALIK tag)</b> je samo <b>PREZENTACIONI</b>, dok je 
+             druga grupa <b>LOGIČNI</b>. <br>
+             Prezentacioni tagovi samo stilizuju tekst u vizuelnom smislu i ništa više, dok logični daju 
+             značenje i prilikom pretraga u browser-ima daju na značenju vašeg teksta. <br> <br> 
+           
+           <h2>
+               PRIKAZ SPECIJALNIH KARAKTERA 
+           </h2> 
+           
+             <p>
+             Određeni elementi su "rezervisani za HTML" što znači da ne bi bilo poželjno koristiti ih 
+             kao tekst jer mogu da uzrokuju probleme u HTML kodu i samom prikazu u browser-u. <br>
+             <b>NA PRIMER</b> korišćenje leve zagrade <b>"<"</b> može da prouzrokuje probleme u prikazu sadržaja u 
+             browser-u, jer browser može da očekuje da je u stvari otvoren tag. <br>
+             Zato se ovaj karakter, iako se može uneti putem tastature, predstavlja specijalnim karakterom <b>&</b>. <br>
+             Takođe postoje situacije kada određene elemente na stranici nije moguće uneti pomoću 
+             tastature, već je jedini način da se oni unesu pomoću specijalnih karaktera. <br>
+             </p>
+             
+             <p>
+             <i style="color: blue;">Sva prava su zadržana</i>.  
+             </p>
+                     
+        </div>
+                <br> <br>
+        <div>
+            <h1>
+              VEŽBA 02 - RAD SA LINKOVIMA 
+            </h1> 
+           
+             <p>
+             Kada kažemo <b>LINKOVI</b> podrazumeva se <b>ANCHOR TAG (⟨a⟩)</b>.  
+             Služi da kreira link na našoj web stranici. <br>
+             <b>LINK TAG (⟨link⟩)</b> služi za učitavanje spoljnih resursa na našu stranicu 
+             (npr JavaScript-a, CSS fajla....). <br>
+             Da bi kreirali link neophodno je da sadržaj koji želimo da definišemo kao link i učinimo ga 
+             klikabilnim okružimo sa <b>ANCHOR TAGOM</b>.<br>
+             Sledeće što treba da dodate je <b>HREF atribut</b> koji ce reći pretraživaču gde treba da ode 
+             kada se klikne na link. 
+             </p>
+             
+            <br>
+            <h3>
+             HYPERLINK 
+            </h3>
+             
+             Vi trenutno pohadjate <b>QA kurs</b> u okviru kompanije 
+             <a href="https://cubes.edu.rs/" target="_blank"> CUBES </a>.
+             
+             <br>
+             <br>
+            <h3>
+             SLIKA KAO LINK  
+            </h3>
+             
+             <p>
+             Naša kompanija ima sledeći logo. 
+             </p>
+             
+             <a href="https://cubes.edu.rs/" target="_blank"> 
+                 <img src="../FOTO/cubes-logo.png" alt="cubes.edu.rs" width="200" height="80" style="width: 30%"> 
+             </a>  
+             
+             <p>
+             Klikom na sliku logo-a posetite naš Web site 
+             <a href="https://cubes.edu.rs/" target="_blank">https://cubes.edu.rs/</a>
+             </p>
+           
+             <p>
+             Za sva nejasna pitanja i probleme koje naiđete u radu možete me kontaktirati na mail 
+             <a href="mailto:milomir.dragovic@cubes.rs">
+               <span>milomir.dragovic@cubes.rs</span>
+             </a>
+             </p>
+             
+             <br>
+            <h3>
+             DOWNLOAD LINK
+            </h3>
+             <strong>Download link</strong> se koristi kada želimo da klikom na neki deo na stranici download-ujemo 
+             neki externi sadržaj.<br> 
+             U ovom primeru možete preuzeti upustvo za podešavanja
+             
+             <a href="https://drive.google.com/file/d/1va4zDdR_BGHfc7zTWwHoHo6XuNtoykAN/view?usp=sharing" 
+                target="_blank">NETBEANSA</a>.
+             
+             <br>   
+             <br>
+            <h3>
+             LINKOVANJE NA ODREĐENI DEO NA ISTOJ STRANICI   
+            </h3> 
+           
+             <p>
+             Da bi ovo pokazao, neophodno je da dodamo malo sadržaja  
+             (<b>LOREM IPSUM</b> je tekst bez značaja koji se dodaje da bi se samo popunila stranica 
+             i stilski videla kako bi izgledala) kako bi naša stranica imala scroll bar sa desne 
+             strane i kako bi ovaj efekat bio vidljiv. <br>
+             Prvo šta treba da uradite je da definišete gde treba da odete klikom na link. <br>
+             Ja želim da odem na Vrh stranice na naslov - u ovom primeru H1 tag. 
+             Da bi to uradio moram <b>JEDINSTVENO</b> da definišem taj element. <br>
+             To radim upotrebom ID atributa. H1 tagu na ovoj stranici dodeliću atribut id="mainTitle".
+             Kada sam to uradio odlazim na link i njemu u href atribut kao vrednost postavljam 
+             taj ID (<b>ID se označava #</b>). 
+             </p> <br>
+          
+             <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+             ut labore et dolore magna aliqua. <br> 
+             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+             commodo consequat. <br>
+             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+             nulla pariatur. <br>
+             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+             anim id est laborum. <br>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+             ut labore et dolore magna aliqua. <br>
+             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+             commodo consequat. <br>
+             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+             nulla pariatur. <br>
+             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+             anim id est laborum.<br>
+             <br>
+             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore  veritatis et quasi 
+             architecto beatae vitae dicta sunt explicabo. <br>
+             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+             consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <br>
+             Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci 
+             velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam 
+             quaerat voluptatem. <br>
+             Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+             nisi ut aliquid ex ea commodi consequatur? <br>
+             Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae 
+             consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.<br>
+             <br>
+             Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+             unknown printer took a galley of type and scrambled it to make a type specimen book.<br>
+             It has survived not only five centuries, but also the leap into electronic typesetting, 
+             remaining essentially unchanged. <br> 
+             It was popularised in the 1960s with the release of Letraset sheets containing 
+             Lorem Ipsum passages, and more recently with desktop publishing software like 
+             Aldus PageMaker including versions of Lorem Ipsum.<br>
+             <br>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+             ut labore et dolore magna aliqua. <br>
+             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+             ex ea commodo consequat.<br>
+             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+             nulla pariatur. <br>
+             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+             mollit anim id est laborum. 
+             </p>
+           
+             <p>
+                 <a href="#mainTitle" id="vrh">NAZAD NA VRH STRANICE</a>   
+             </p>
+                        
+            <a href="file:///C:/Users/Ivana/Desktop/CUBES%20%C5%A0KOLA/public_html/public_html/HTML/uvod-u-web.html" id="druga-strana">
+             LINK NA DRUGU STRANICU ISTOG PROJEKTA</a>
+      
+        </div>                
+                <br> <br>
+        <div>     
+            <h1>
+             VEŽBA 03 - RAD SA SLIKAMA
+            </h1>
+            
+             <p>
+             Kada želimo da ubacimo sliku u sadržaj na našoj web stranici koristimo tag <b>⟨img⟩</b>.<br>
+             Veoma je važno napomenuti da je ovaj tag <b>samozatvarajući!!!</b> <br>
+
+             Da bi ovaj tag imao smisla neophodno mu je dodati atribut <b>SRC</b>. SRC atribut 
+             predstavlja <b>SOURCE</b>, tj. putanju gde se naša slika nalazi. <br>
+             Ova putanja može biti <i>relativna</i> i <i>apsolutna</i>. U najvećem delu vašeg budućeg 
+             rada po pitanju slika koristićete samo relativnu putanju.<br>
+
+             <b>Relativna putanja</b> se odnosi na poziciju slike u odnosu na "VAŠU" poziciju 
+             <b>(POZICIJU HTML STRANICE)</b>. <br>
+             <b>Apsolutna putanja</b> je putanja gde se stvarno nalazi neki element bez obzira na 
+             vašu poziciju.<br>
+
+             Kod unosa relativne putanje <b>"/"</b> predstavlja <b>ULAZAK</b> u neki folder dok <b>"../"</b> 
+             predstavlja izlazak iz nekog foldera.<br>
+
+             Ispod ovog paragrafa ću učitati <b>sliku 1</b> iz foldera <b>"slike"</b> 
+             <b id="slicica">(src="slike/slika-01.jpg")</b> <br>
+
+             Pored SRC atributa drugi veoma važan atribut je <b>ALT atribut</b> - <i>alternative</i>,
+             koji predstavlja zamenu ukoliko se slika iz nekog razloga nije učitala. <br>
+             Ovaj atribut treba da bude tekstualan i SMISLEN tj. da odgovara samoj slici.<br>
+
+             <b>TITLE</b> atribut služi kao dodatno objašnjenje za sliku. Ukoliko mišem pređemo preko
+             slike, posle nekoliko trenutaka prikazaće se tekst iz TITLE atributa.
+             </p>
+                                   
+             <img src="../FOTO/slika-01.jpg" alt="CUBES TIM" width="1000" height="450">
+             
+        </div>           
+            <br> <br> 
+        <div>
+            <h1>
+             VEŽBA 04 - LISTE 
+            </h1> 
+            
+             <p>
+             Liste se koriste kada imamo više elemenata koje treba nabrojati. U zavisnosti da li nam je
+             bitan raspored elemenata koje nabrajamo razlikujemo 3 vrste lista:
+             </p>
+             
+             <ol>
+              <li>
+                  UNORDERED LIST <b>(ul)</b> - liste gde nije bitan raspored elemenata
+              </li>
+              
+              <li>
+                  ORDERED LIST <b>(ol)</b> - liste gde je bitan raspored elemenata
+              </li>
+              
+              <li>
+                  DESCRIPTION LIST <b>(dl)</b> - namenjene za objašnjavanje nekih pojmova i izraza
+              </li>
+             </ol>
+             
+             <ul>
+              <li>
+                  UNORDERED LIST    
+              </li>
+            
+              <li>
+                  ORDERED LIST
+              </li> 
+            
+              <li>
+                  DESCRIPTION LIST
+              </li>
+            
+              <li>
+                  UGNJEŽDENE LISTE
+              </li>  
+             </ul>
+        
+        </div>
+            <br>
+            
+        <div>
+            <h1>
+             VEŽBA 05 - TABELE  
+            </h1> 
+            
+             <p>
+             Tabele <b>(table tag)</b> se koriste za tabelarni prikaz informacija tj. po redovima 
+             <b>(tr tag)</b> i ćelijama <b>(td tag)</b>. <br>
+             Ono što se takođe dobija jeste automatsko dodeljivanje širine kolona u zavisnosti od 
+             sadržaja ćelije.<br>
+             Svaka tabela se sastoji iz zaglavlja <b>(thead taga)</b>, tela <b>(tbody taga)</b> i 
+             futera <b>(tfoot)</b> taga. <br>
+             U zaglavlju, telu i futeru može se naći jedan ili više redova <b>(tr tagova)</b>. <br>
+             Svaka ćelija može biti obična <b>(td tag)</b> ili ćelija koja označava kolonu ili 
+             red <b>(th tag)</b>.
+             </p>
+             
+             <br>
+                           
+            <h3>
+             Tabela sa zaglavljem
+            </h3>
+            
+             <table style="width:35%; border-collapse: collapse;">
+                 
+              <tr>
+              <th>Br.</th>
+              <th>Ime i prezime</th> 
+             </tr>
+             
+             <tr>
+              <td>1.</td>
+              <td>Marko Barlović </td>
+             </tr>
+          
+             <tr>
+              <td>2.</td>
+              <td>Maša Božović</td>
+             </tr>
+             
+             <tr>
+              <td>3.</td>
+              <td>Zorica Mijatović </td>
+             </tr>
+             
+             <tr>
+              <td>4.</td>
+              <td>Maja Vasiljević</td>
+             </tr>
+             
+             <tr>
+              <td>6.</td>
+              <td>Ivana Stefanović</td>
+             </tr>
+             
+             <tr>
+              <td>9.</td>
+              <td>Dejana Branković</td>
+             </tr>
+             
+             <tr>
+              <td>10.</td>
+              <td>Obren Misirilić </td>
+             </tr>
+             
+             <tr>
+              <td>11.</td>
+              <td>Darko Dumanjić </td>
+             </tr>
+             
+             <tr>
+              <td>12.</td>
+              <td>Nemanja Stevanić </td>
+             </tr>
+             
+             <tr>
+              <td>13.</td>
+              <td>Marko Brašanac</td>
+             </tr>
+             
+             <tr>
+              <td>14.</td>
+              <td>Milan Zelenović </td>
+             </tr>
+             
+             <tr>
+              <td>15.</td>
+              <td>Filip Stanković</td>
+             </tr>
+             
+             <tr>
+              <td>17.</td>
+              <td>Dragan Martinović </td>
+             </tr>
+             
+             <tr>
+              <td>18.</td>
+              <td>Ana Radojević </td>
+             </tr>
+             
+             <tr>
+              <td>19.</td>
+              <td>Valentina Lulić</td>
+             </tr>
+             
+             <tr>
+              <td>21.</td>
+              <td>Stefan Babić</td>
+             </tr>
+             
+             </table> 
+        </div>    
+             
+             <br>
+        <div>
+             
+            <h3>
+             Tabela bez zaglavlja   
+            </h3>
+            
+             <table style="width:35%; background-color:#ccffcc; border-collapse: collapse;" >
+                         
+             <tr>
+              <td>1.</td>
+              <td>Marko Barlović </td>
+             </tr>
+          
+             <tr>
+              <td>2.</td>
+              <td>Maša Božović</td>
+             </tr>
+             
+             <tr>
+              <td>3.</td>
+              <td>Zorica Mijatović </td>
+             </tr>
+             
+             <tr>
+              <td>4.</td>
+              <td>Maja Vasiljević</td>
+             </tr>
+             
+             <tr>
+              <td>6.</td>
+              <td>Ivana Stefanović</td>
+             </tr>
+             
+             <tr>
+              <td>9.</td>
+              <td>Dejana Branković</td>
+             </tr>
+             
+             <tr>
+              <td>10.</td>
+              <td>Obren Misirilić </td>
+             </tr>
+             
+             <tr>
+              <td>11.</td>
+              <td>Darko Dumanjić </td>
+             </tr>
+             
+             <tr>
+              <td>12.</td>
+              <td>Nemanja Stevanić </td>
+             </tr>
+             
+             <tr>
+              <td>13.</td>
+              <td>Marko Brašanac</td>
+             </tr>
+             
+             <tr>
+              <td>14.</td>
+              <td>Milan Zelenović </td>
+             </tr>
+             
+             <tr>
+              <td>15.</td>
+              <td>Filip Stanković</td>
+             </tr>
+             
+             <tr>
+              <td>17.</td>
+              <td>Dragan Martinović </td>
+             </tr>
+             
+             <tr>
+              <td>18.</td>
+              <td>Ana Radojević </td>
+             </tr>
+             
+             <tr>
+              <td>19.</td>
+              <td>Valentina Lulić</td>
+             </tr>
+             
+             <tr>
+              <td>21.</td>
+              <td>Stefan Babić</td>
+             </tr>
+             
+             </table> 
+        </div> 
+             <br>
+              <p>
+            <a href="#mainTitle" id="vrh">NAZAD NA VRH STRANICE</a>   
+             </p>
+            <a href="file:///C:/Users/Ivana/Desktop/CUBES%20%C5%A0KOLA/public_html/public_html/HTML/uvod-u-web.html" id="druga-strana">
+                LINK NA DRUGU STRANICU ISTOG PROJEKTA</a>
+             
+            </section>
+    </div>
+
+        <!-- Footer -->
+    <footer>
+        <h2>QA kurs 2020 - Grupa QA6 </h2>
+        <p>Cubes škola je mesto Vaših prvih koraka u IT karijeri. </p>
+        
+        <a href="https://www.facebook.com/CubesSchool/" target="_blank"> <img src="../FOTO/fb-foto.png" alt="Facebook" width="30" height="30"> </a>
+        <a href="https://www.instagram.com/cubesschool/" target="_blank"> <img src="../FOTO/instagram-foto.jpg" alt="Instagram" width="30" height="30"> </a>
+        <a href="https://www.linkedin.com/company/cubes-doo/" target="_blank"> <img src="../FOTO/linkedin-foto.jpg" alt="Linkedin" width="30" height="30"> </a>
+  
+        
+        <hr>
+    <div>
+        Copyright © Sva prava su zadržana.
+    </div>
+        
+    </footer>
+
+  </body>
+</html>
+
