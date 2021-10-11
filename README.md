@@ -1,0 +1,2 @@
+# CubesSchool
+First school project
